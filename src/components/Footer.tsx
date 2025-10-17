@@ -19,11 +19,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
-                <span className="text-white font-heading font-bold text-xl">B</span>
-              </div>
-              <span className="font-heading font-bold text-xl">Builda</span>
+            <div className="mb-4">
+              <img 
+                src="/src/assets/logo.png" 
+                alt="npro Consultants" 
+                className="h-12 w-auto object-contain brightness-0 invert"
+              />
             </div>
             <p className="text-white/80 mb-4">
               Building strong foundations for the future with expert structural
@@ -108,7 +109,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
-          <p>&copy; {new Date().getFullYear()} Builda Structural Engineering. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} npro Consultants. All rights reserved.</p>
         </div>
       </div>
     </footer>
