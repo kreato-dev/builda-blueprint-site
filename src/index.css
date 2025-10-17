@@ -8,41 +8,41 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 221 39% 11%;
+    --background: 35 30% 94%;
+    --foreground: 0 0% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 221 39% 11%;
+    --card-foreground: 0 0% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 221 39% 11%;
+    --popover-foreground: 0 0% 10%;
 
-    --primary: 0 65% 45%;
+    --primary: 0 0% 10%;
     --primary-foreground: 0 0% 100%;
     
-    --primary-dark: 0 65% 30%;
-    --primary-light: 0 65% 55%;
+    --primary-dark: 0 0% 5%;
+    --primary-light: 0 0% 20%;
 
-    --secondary: 0 0% 15%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 35 30% 94%;
+    --secondary-foreground: 0 0% 10%;
 
-    --muted: 220 13% 91%;
-    --muted-foreground: 220 9% 46%;
+    --muted: 35 20% 88%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 0 65% 45%;
+    --accent: 25 95% 53%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 0 65% 45%;
+    --border: 35 20% 85%;
+    --input: 35 20% 90%;
+    --ring: 25 95% 53%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
     
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 15% / 0.9), hsl(0 65% 30% / 0.95));
-    --gradient-overlay: linear-gradient(180deg, transparent, hsl(0 0% 15% / 0.8));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 10% / 0.7), hsl(0 0% 5% / 0.5));
+    --gradient-overlay: linear-gradient(to bottom, hsl(35 30% 94% / 0.1), hsl(0 0% 10% / 0.6));
     
     --shadow-sm: 0 1px 2px 0 hsl(221 39% 11% / 0.05);
     --shadow-md: 0 4px 6px -1px hsl(221 39% 11% / 0.1);

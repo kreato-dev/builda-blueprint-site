@@ -1,23 +1,12 @@
-import { Award, Clock, Lightbulb } from "lucide-react";
+import { CheckCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import aboutImage from "@/assets/about-engineers.jpg";
 
 const About = () => {
   const features = [
-    {
-      icon: Award,
-      title: "Quality Construction",
-      description: "Premium materials and expert craftsmanship in every project",
-    },
-    {
-      icon: Lightbulb,
-      title: "Innovative Design",
-      description: "Cutting-edge solutions that push engineering boundaries",
-    },
-    {
-      icon: Clock,
-      title: "On-Time Delivery",
-      description: "Reliable project completion within agreed timelines",
-    },
+    "Site analysis and feasibility studies.",
+    "100% Satisfaction guarantee",
+    "Architectural design tailored to business needs."
   ];
 
   return (
@@ -25,52 +14,43 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image */}
-          <div className="animate-fade-in">
+          <div className="relative">
             <img
               src={aboutImage}
-              alt="Structural engineers reviewing blueprints at construction site"
-              className="rounded-lg shadow-xl w-full h-auto object-cover"
+              alt="Structural engineers reviewing blueprints"
+              className="rounded-3xl shadow-2xl w-full h-[500px] object-cover"
             />
           </div>
 
           {/* Content */}
-          <div className="animate-slide-up">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-6">
-              Trusted Structural Engineering Experts
-            </h2>
-            <p className="text-muted-foreground text-lg mb-8">
-              With over a decade of experience in structural engineering, we
-              specialize in delivering comprehensive solutions for complex
-              infrastructure projects. Our team of certified engineers combines
-              technical expertise with innovative thinking to ensure every
-              structure we design meets the highest standards of safety,
-              durability, and functionality.
-            </p>
-
-            {/* Features Grid */}
-            <div className="grid gap-6">
-              {features.map((feature, index) => {
-                const Icon = feature.icon;
-                return (
-                  <div
-                    key={index}
-                    className="flex items-start space-x-4 p-4 bg-secondary rounded-lg hover-lift"
-                  >
-                    <div className="flex-shrink-0 w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                      <Icon className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-heading font-semibold text-lg mb-2">
-                        {feature.title}
-                      </h3>
-                      <p className="text-muted-foreground">
-                        {feature.description}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
+          <div className="space-y-6">
+            <div>
+              <p className="text-accent font-semibold mb-2 uppercase tracking-wide text-sm">
+                ABOUT ME
+              </p>
+              <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-6 leading-tight">
+                Structural Solutions<br />That Stand Tall.
+              </h2>
+              <p className="text-muted-foreground text-base leading-relaxed mb-8">
+                Structural engineering is a crucial branch of civil engineering that focuses on designing, analyzing, and constructing safe, durable, and efficient structures. It ensures that buildings, bridges, towers, and other infrastructures.
+              </p>
             </div>
+
+            {/* Features */}
+            <div className="space-y-4">
+              {features.map((feature, index) => (
+                <div key={index} className="flex items-center gap-3">
+                  <div className="flex-shrink-0">
+                    <CheckCircle className="w-6 h-6 text-accent" />
+                  </div>
+                  <p className="text-foreground">{feature}</p>
+                </div>
+              ))}
+            </div>
+
+            <Button className="mt-6 bg-primary hover:bg-primary-dark text-primary-foreground rounded-full px-8">
+              More About Builda →
+            </Button>
           </div>
         </div>
       </div>

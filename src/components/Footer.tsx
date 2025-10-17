@@ -15,6 +15,30 @@ const Footer = () => {
 
   return (
     <footer className="bg-primary text-white">
+      {/* Newsletter Section */}
+      <div className="border-b border-white/10">
+        <div className="container mx-auto px-4 py-12">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+              <h3 className="text-2xl md:text-3xl font-heading font-bold mb-2">
+                Newsletter To Get Updated
+              </h3>
+              <p className="text-xl text-white/80">The Latest News</p>
+            </div>
+            <div className="flex gap-3 w-full md:w-auto">
+              <input
+                type="email"
+                placeholder="Enter your Email"
+                className="px-6 py-3 rounded-full bg-primary-light text-white placeholder:text-white/60 border border-white/20 focus:outline-none focus:ring-2 focus:ring-accent flex-1 md:w-80"
+              />
+              <Button className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full px-8">
+                Subscribe Now →
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
